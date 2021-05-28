@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RatRace
 {
-    class User
+    public class User
     {
     }
 }
