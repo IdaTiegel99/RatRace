@@ -13,6 +13,16 @@ namespace RatRace
         Rat[] rats = new Rat[5];
         Bet[] bets = new Bet[5];
 
+        public RaceManager()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                players[i] = new Player(i);
+                rats[i] = new Rat(i);
+
+            }
+        }
+
         public void MakeBet(Player play, Rat rat, double amount)
         {
             Bet B = new Bet();

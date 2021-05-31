@@ -14,6 +14,8 @@ namespace RatRace
         [STAThread]
         static void Main()
         {
+            RaceManager rm = new RaceManager();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());

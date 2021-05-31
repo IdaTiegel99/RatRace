@@ -9,7 +9,15 @@ namespace RatRace
     public class Player
     {
         public int PlayerID;
+     
         public double Money;
 
+
+        public Player(int id)
+        {
+            PlayerID = id;
+
+            Money = 100;
+        }
     }
 }
