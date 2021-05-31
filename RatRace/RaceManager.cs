@@ -13,6 +13,10 @@ namespace RatRace
         public Rat RatID;
         public Bet BetID;
         public Bet Amount;
+
+        
     }
+
+    
 }
 
