@@ -20,7 +20,7 @@ namespace RatRace
       
         private void BtnPlayer1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void BtnPlayer2_Click(object sender, EventArgs e)

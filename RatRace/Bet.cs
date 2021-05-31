@@ -17,7 +17,7 @@ namespace RatRace
 
         public Bet()
         {
-
+           
         }
     }
         
