@@ -8,5 +8,6 @@ namespace RatRace
 {
     public class Rat
     {
+        public int RatID;
     }
 }
