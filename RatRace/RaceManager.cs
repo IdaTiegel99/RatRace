@@ -8,14 +8,21 @@ namespace RatRace
 {
     public class RaceManager 
     {
-        public Player PlayerID;
-        public Player Money;
-        public Rat RatID;
-        public Bet BetID;
-        public Bet Amount;
-
         
+        Player[] players = new Player[5];
+        Rat[] rats = new Rat[5];
+        Bet[] bets = new Bet[5];
+
+        public void MakeBet(Player play, Rat rat, double Amount)
+        {
+            Bet B = new Bet();
+            B.PlayerID = play;
+            B.RatID = rat;
+            B.BetAmount = Amount;
+        }
+
     }
+
 
     
 }

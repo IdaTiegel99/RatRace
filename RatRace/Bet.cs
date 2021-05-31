@@ -12,8 +12,8 @@ namespace RatRace
     {
         public Player PlayerID;
         public Rat RatID;
-        public int Amount;
-        public int BetID;
+        public double BetAmount;
+        public double BetID;
     }
         
 

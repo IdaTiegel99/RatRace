@@ -49,7 +49,7 @@ namespace RatRace
             // 
             // BtnPlayer2
             // 
-            this.BtnPlayer2.Location = new System.Drawing.Point(173, 296);
+            this.BtnPlayer2.Location = new System.Drawing.Point(174, 296);
             this.BtnPlayer2.Name = "BtnPlayer2";
             this.BtnPlayer2.Size = new System.Drawing.Size(112, 35);
             this.BtnPlayer2.TabIndex = 1;
@@ -58,7 +58,7 @@ namespace RatRace
             // 
             // BtnPlayer3
             // 
-            this.BtnPlayer3.Location = new System.Drawing.Point(344, 296);
+            this.BtnPlayer3.Location = new System.Drawing.Point(348, 296);
             this.BtnPlayer3.Name = "BtnPlayer3";
             this.BtnPlayer3.Size = new System.Drawing.Size(110, 35);
             this.BtnPlayer3.TabIndex = 2;
@@ -67,7 +67,7 @@ namespace RatRace
             // 
             // BtnPlayer4
             // 
-            this.BtnPlayer4.Location = new System.Drawing.Point(518, 296);
+            this.BtnPlayer4.Location = new System.Drawing.Point(511, 296);
             this.BtnPlayer4.Name = "BtnPlayer4";
             this.BtnPlayer4.Size = new System.Drawing.Size(106, 35);
             this.BtnPlayer4.TabIndex = 3;
