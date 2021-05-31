@@ -20,7 +20,7 @@ namespace RatRace
             }
             base.Dispose(disposing);
         }
-
+        //hej
         #region Windows Form Designer generated code
 
         /// <summary>
