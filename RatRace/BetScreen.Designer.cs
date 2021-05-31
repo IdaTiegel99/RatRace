@@ -36,6 +36,7 @@ namespace RatRace
             this.BetRat5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BetDone = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BetRat1
@@ -70,7 +71,7 @@ namespace RatRace
             // 
             // BetRat4
             // 
-            this.BetRat4.Location = new System.Drawing.Point(193, 302);
+            this.BetRat4.Location = new System.Drawing.Point(196, 251);
             this.BetRat4.Name = "BetRat4";
             this.BetRat4.Size = new System.Drawing.Size(136, 46);
             this.BetRat4.TabIndex = 3;
@@ -80,7 +81,7 @@ namespace RatRace
             // 
             // BetRat5
             // 
-            this.BetRat5.Location = new System.Drawing.Point(475, 302);
+            this.BetRat5.Location = new System.Drawing.Point(473, 251);
             this.BetRat5.Name = "BetRat5";
             this.BetRat5.Size = new System.Drawing.Size(136, 46);
             this.BetRat5.TabIndex = 4;
@@ -106,11 +107,22 @@ namespace RatRace
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // BetDone
+            // 
+            this.BetDone.Location = new System.Drawing.Point(339, 392);
+            this.BetDone.Name = "BetDone";
+            this.BetDone.Size = new System.Drawing.Size(136, 46);
+            this.BetDone.TabIndex = 7;
+            this.BetDone.Text = "Submit";
+            this.BetDone.UseVisualStyleBackColor = true;
+            this.BetDone.Click += new System.EventHandler(this.BetDone_Click);
+            // 
             // BetScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BetDone);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BetRat5);
@@ -134,5 +146,6 @@ namespace RatRace
         private System.Windows.Forms.Button BetRat5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button BetDone;
     }
 }
