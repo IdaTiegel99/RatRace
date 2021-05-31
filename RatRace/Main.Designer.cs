@@ -29,23 +29,13 @@ namespace RatRace
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnPlayer1 = new System.Windows.Forms.Button();
             this.BtnPlayer2 = new System.Windows.Forms.Button();
             this.BtnPlayer3 = new System.Windows.Forms.Button();
             this.BtnPlayer4 = new System.Windows.Forms.Button();
             this.BtnPlayer5 = new System.Windows.Forms.Button();
             this.BtnMove = new System.Windows.Forms.Button();
+            this.BtnPlayer1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // BtnPlayer1
-            // 
-            this.BtnPlayer1.Location = new System.Drawing.Point(12, 296);
-            this.BtnPlayer1.Name = "BtnPlayer1";
-            this.BtnPlayer1.Size = new System.Drawing.Size(96, 35);
-            this.BtnPlayer1.TabIndex = 0;
-            this.BtnPlayer1.Text = "Player 1 Bet";
-            this.BtnPlayer1.UseVisualStyleBackColor = true;
-            this.BtnPlayer1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // BtnPlayer2
             // 
@@ -55,6 +45,7 @@ namespace RatRace
             this.BtnPlayer2.TabIndex = 1;
             this.BtnPlayer2.Text = "Player 2 Bet";
             this.BtnPlayer2.UseVisualStyleBackColor = true;
+            this.BtnPlayer2.Click += new System.EventHandler(this.BtnPlayer2_Click);
             // 
             // BtnPlayer3
             // 
@@ -64,6 +55,7 @@ namespace RatRace
             this.BtnPlayer3.TabIndex = 2;
             this.BtnPlayer3.Text = "Player 3 Bet";
             this.BtnPlayer3.UseVisualStyleBackColor = true;
+            this.BtnPlayer3.Click += new System.EventHandler(this.BtnPlayer3_Click);
             // 
             // BtnPlayer4
             // 
@@ -73,6 +65,7 @@ namespace RatRace
             this.BtnPlayer4.TabIndex = 3;
             this.BtnPlayer4.Text = "Player 4 Bet";
             this.BtnPlayer4.UseVisualStyleBackColor = true;
+            this.BtnPlayer4.Click += new System.EventHandler(this.BtnPlayer4_Click);
             // 
             // BtnPlayer5
             // 
@@ -82,6 +75,7 @@ namespace RatRace
             this.BtnPlayer5.TabIndex = 4;
             this.BtnPlayer5.Text = "Player 5 Bet";
             this.BtnPlayer5.UseVisualStyleBackColor = true;
+            this.BtnPlayer5.Click += new System.EventHandler(this.BtnPlayer5_Click);
             // 
             // BtnMove
             // 
@@ -92,17 +86,27 @@ namespace RatRace
             this.BtnMove.Text = "Move";
             this.BtnMove.UseVisualStyleBackColor = true;
             // 
+            // BtnPlayer1
+            // 
+            this.BtnPlayer1.Location = new System.Drawing.Point(12, 296);
+            this.BtnPlayer1.Name = "BtnPlayer1";
+            this.BtnPlayer1.Size = new System.Drawing.Size(111, 35);
+            this.BtnPlayer1.TabIndex = 6;
+            this.BtnPlayer1.Text = "Player 3 Bet";
+            this.BtnPlayer1.UseVisualStyleBackColor = true;
+            this.BtnPlayer1.Click += new System.EventHandler(this.BtnPlayer1_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnPlayer1);
             this.Controls.Add(this.BtnMove);
             this.Controls.Add(this.BtnPlayer5);
             this.Controls.Add(this.BtnPlayer4);
             this.Controls.Add(this.BtnPlayer3);
             this.Controls.Add(this.BtnPlayer2);
-            this.Controls.Add(this.BtnPlayer1);
             this.Name = "Main";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -110,13 +114,12 @@ namespace RatRace
         }
 
         #endregion
-
-        private System.Windows.Forms.Button BtnPlayer1;
         private System.Windows.Forms.Button BtnPlayer2;
         private System.Windows.Forms.Button BtnPlayer3;
         private System.Windows.Forms.Button BtnPlayer4;
         private System.Windows.Forms.Button BtnPlayer5;
         private System.Windows.Forms.Button BtnMove;
+        private System.Windows.Forms.Button BtnPlayer1;
     }
 }
 

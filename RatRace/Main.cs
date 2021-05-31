@@ -17,14 +17,31 @@ namespace RatRace
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+      
+        private void BtnPlayer1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void BtnPlayer2_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void BtnPlayer3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnPlayer4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnPlayer5_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
