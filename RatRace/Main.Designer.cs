@@ -92,7 +92,7 @@ namespace RatRace
             this.BtnPlayer1.Name = "BtnPlayer1";
             this.BtnPlayer1.Size = new System.Drawing.Size(111, 35);
             this.BtnPlayer1.TabIndex = 6;
-            this.BtnPlayer1.Text = "Player 3 Bet";
+            this.BtnPlayer1.Text = "Player 1 Bet";
             this.BtnPlayer1.UseVisualStyleBackColor = true;
             this.BtnPlayer1.Click += new System.EventHandler(this.BtnPlayer1_Click);
             // 
