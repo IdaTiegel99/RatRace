@@ -13,17 +13,15 @@ namespace RatRace
         Rat[] rats = new Rat[5];
         Bet[] bets = new Bet[5];
 
-        public void MakeBet(Player play, Rat rat, double Amount)
+        public void MakeBet(Player play, Rat rat, double amount)
         {
             Bet B = new Bet();
             B.PlayerID = play;
             B.RatID = rat;
-            B.BetAmount = Amount;
+            B.BetAmount = amount;
         }
 
     }
-
-
-    
+ 
 }
 
