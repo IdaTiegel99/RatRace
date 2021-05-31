@@ -8,5 +8,7 @@ namespace RatRace
 {
     public class Player
     {
+        public int playerID;
+
     }
 }
