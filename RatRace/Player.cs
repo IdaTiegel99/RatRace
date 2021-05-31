@@ -8,7 +8,8 @@ namespace RatRace
 {
     public class Player
     {
-        public int playerID;
+        public int PlayerID;
+        public double Money;
 
     }
 }
