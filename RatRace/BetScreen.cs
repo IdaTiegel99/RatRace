@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RatRace
 {
-    public partial class P1Bet : Form
+    public partial class BetScreen : Form
     {
-        public P1Bet()
+        public BetScreen()
         {
             InitializeComponent();
         }

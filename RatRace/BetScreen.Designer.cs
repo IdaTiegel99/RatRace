@@ -1,7 +1,7 @@
 ﻿
 namespace RatRace
 {
-    partial class P1Bet
+    partial class BetScreen
     {
         /// <summary>
         /// Required designer variable.
