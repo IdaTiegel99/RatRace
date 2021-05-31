@@ -20,7 +20,12 @@ namespace RatRace
       
         private void BtnPlayer1_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
             
+=======
+            BetScreen Bscr = new BetScreen();
+            Bscr.ShowDialog();
+>>>>>>> Stashed changes
         }
 
         private void BtnPlayer2_Click(object sender, EventArgs e)
