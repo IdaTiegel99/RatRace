@@ -16,5 +16,35 @@ namespace RatRace
         {
             InitializeComponent();
         }
+
+        private void BetRat1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BetRat2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BetRat3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BetRat4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BetRat5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
