@@ -44,7 +44,7 @@ namespace RatRace
 
         private void BetDone_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
