@@ -36,16 +36,17 @@ namespace RatRace
             this.BtnPlayer5 = new System.Windows.Forms.Button();
             this.BtnMove = new System.Windows.Forms.Button();
             this.BtnPlayer1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureRat1 = new System.Windows.Forms.PictureBox();
+            this.pictureRat2 = new System.Windows.Forms.PictureBox();
+            this.pictureRat5 = new System.Windows.Forms.PictureBox();
+            this.pictureRat3 = new System.Windows.Forms.PictureBox();
+            this.pictureRat4 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRat1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRat2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRat5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRat3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRat4)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnPlayer2
@@ -108,67 +109,80 @@ namespace RatRace
             this.BtnPlayer1.UseVisualStyleBackColor = true;
             this.BtnPlayer1.Click += new System.EventHandler(this.BtnPlayer1_Click);
             // 
-            // pictureBox1
+            // button1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(11, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(112, 75);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.button1.Location = new System.Drawing.Point(11, 585);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox2
+            // pictureRat1
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(10, 93);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(113, 75);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
+            this.pictureRat1.Image = ((System.Drawing.Image)(resources.GetObject("pictureRat1.Image")));
+            this.pictureRat1.Location = new System.Drawing.Point(11, 12);
+            this.pictureRat1.Name = "pictureRat1";
+            this.pictureRat1.Size = new System.Drawing.Size(112, 75);
+            this.pictureRat1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureRat1.TabIndex = 8;
+            this.pictureRat1.TabStop = false;
+            this.pictureRat1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox3
+            // pictureRat2
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 336);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(111, 75);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureRat2.Image = ((System.Drawing.Image)(resources.GetObject("pictureRat2.Image")));
+            this.pictureRat2.Location = new System.Drawing.Point(10, 93);
+            this.pictureRat2.Name = "pictureRat2";
+            this.pictureRat2.Size = new System.Drawing.Size(113, 75);
+            this.pictureRat2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureRat2.TabIndex = 9;
+            this.pictureRat2.TabStop = false;
             // 
-            // pictureBox4
+            // pictureRat5
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 174);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(111, 75);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 11;
-            this.pictureBox4.TabStop = false;
+            this.pictureRat5.Image = ((System.Drawing.Image)(resources.GetObject("pictureRat5.Image")));
+            this.pictureRat5.Location = new System.Drawing.Point(12, 336);
+            this.pictureRat5.Name = "pictureRat5";
+            this.pictureRat5.Size = new System.Drawing.Size(111, 75);
+            this.pictureRat5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureRat5.TabIndex = 10;
+            this.pictureRat5.TabStop = false;
+            this.pictureRat5.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox5
+            // pictureRat3
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(12, 255);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(111, 75);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 12;
-            this.pictureBox5.TabStop = false;
+            this.pictureRat3.Image = ((System.Drawing.Image)(resources.GetObject("pictureRat3.Image")));
+            this.pictureRat3.Location = new System.Drawing.Point(12, 174);
+            this.pictureRat3.Name = "pictureRat3";
+            this.pictureRat3.Size = new System.Drawing.Size(111, 75);
+            this.pictureRat3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureRat3.TabIndex = 11;
+            this.pictureRat3.TabStop = false;
+            // 
+            // pictureRat4
+            // 
+            this.pictureRat4.Image = ((System.Drawing.Image)(resources.GetObject("pictureRat4.Image")));
+            this.pictureRat4.Location = new System.Drawing.Point(12, 255);
+            this.pictureRat4.Name = "pictureRat4";
+            this.pictureRat4.Size = new System.Drawing.Size(111, 75);
+            this.pictureRat4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureRat4.TabIndex = 12;
+            this.pictureRat4.TabStop = false;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(818, 644);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureRat4);
+            this.Controls.Add(this.pictureRat3);
+            this.Controls.Add(this.pictureRat5);
+            this.Controls.Add(this.pictureRat2);
+            this.Controls.Add(this.pictureRat1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnPlayer1);
             this.Controls.Add(this.BtnMove);
             this.Controls.Add(this.BtnPlayer5);
@@ -177,11 +191,11 @@ namespace RatRace
             this.Controls.Add(this.BtnPlayer2);
             this.Name = "Main";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRat1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRat2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRat5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRat3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRat4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -193,11 +207,12 @@ namespace RatRace
         private System.Windows.Forms.Button BtnPlayer5;
         private System.Windows.Forms.Button BtnMove;
         private System.Windows.Forms.Button BtnPlayer1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureRat1;
+        private System.Windows.Forms.PictureBox pictureRat2;
+        private System.Windows.Forms.PictureBox pictureRat5;
+        private System.Windows.Forms.PictureBox pictureRat3;
+        private System.Windows.Forms.PictureBox pictureRat4;
     }
 }
 
