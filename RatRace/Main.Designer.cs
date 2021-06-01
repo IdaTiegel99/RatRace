@@ -85,6 +85,7 @@ namespace RatRace
             this.BtnMove.TabIndex = 5;
             this.BtnMove.Text = "Move";
             this.BtnMove.UseVisualStyleBackColor = true;
+            this.BtnMove.Click += new System.EventHandler(this.BtnMove_Click);
             // 
             // BtnPlayer1
             // 

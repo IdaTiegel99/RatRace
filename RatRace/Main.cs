@@ -20,30 +20,37 @@ namespace RatRace
       
         private void BtnPlayer1_Click(object sender, EventArgs e)
         {       
-
             BetScreen Bscr = new BetScreen();
             Bscr.ShowDialog();
         }
 
         private void BtnPlayer2_Click(object sender, EventArgs e)
         {
-
+            BetScreen Bscr = new BetScreen();
+            Bscr.ShowDialog();
         }
 
         private void BtnPlayer3_Click(object sender, EventArgs e)
         {
-
+            BetScreen Bscr = new BetScreen();
+            Bscr.ShowDialog();
         }
 
         private void BtnPlayer4_Click(object sender, EventArgs e)
         {
-
+            BetScreen Bscr = new BetScreen();
+            Bscr.ShowDialog();
         }
 
         private void BtnPlayer5_Click(object sender, EventArgs e)
         {
-
+            BetScreen Bscr = new BetScreen();
+            Bscr.ShowDialog();
         }
 
+        private void BtnMove_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
