@@ -9,16 +9,17 @@ namespace RatRace
     public class RaceManager 
     {
         
-        Player[] players = new Player[5];
-        Rat[] rats = new Rat[5];
-        Bet[] bets = new Bet[5];
+        public Player[] Players = new Player[5];
+        public Rat[] Rats = new Rat[5];
+        public Bet[] Bets = new Bet[5];
+        public Random Rnd = new Random();
 
         public RaceManager()
         {
             for (int i = 0; i < 5; i++)
             {
-                players[i] = new Player(i);
-                rats[i] = new Rat(i);
+                Players[i] = new Player(i,Rnd.Next(100,301));
+                Rats[i] = new Rat(i);
 
             }
         }

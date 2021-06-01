@@ -27,7 +27,7 @@ namespace RatRace
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.BetRat1 = new System.Windows.Forms.Button();
             this.BetRat2 = new System.Windows.Forms.Button();
@@ -37,6 +37,7 @@ namespace RatRace
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.BetDone = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BetRat1
@@ -95,9 +96,9 @@ namespace RatRace
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(304, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 36);
+            this.label1.Size = new System.Drawing.Size(101, 36);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Player Bets";
+            this.label1.Text = "label1";
             // 
             // textBox1
             // 
@@ -117,11 +118,23 @@ namespace RatRace
             this.BetDone.UseVisualStyleBackColor = true;
             this.BetDone.Click += new System.EventHandler(this.BetDone_Click);
             // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(78, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 32);
+            this.label2.TabIndex = 8;
+            this.label2.Tag = "MoneyLabel";
+            this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // BetScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.BetDone);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -144,8 +157,9 @@ namespace RatRace
         private System.Windows.Forms.Button BetRat3;
         private System.Windows.Forms.Button BetRat4;
         private System.Windows.Forms.Button BetRat5;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button BetDone;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label1;
     }
 }

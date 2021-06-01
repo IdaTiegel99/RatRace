@@ -12,9 +12,23 @@ namespace RatRace
 {
     public partial class BetScreen : Form
     {
+        Player plays;
+        Player playsId;
         public BetScreen()
         {
             InitializeComponent();
+        }
+
+        public BetScreen(Player play)
+        {
+        InitializeComponent();
+            plays = play;
+            label2.Text ="" +play.Money;
+            label2.Update();
+
+            playsId = play;
+            label1.Text = "Player " + play.PlayerID + " Bets";
+ 
         }
 
         private void BetRat1_Click(object sender, EventArgs e)
@@ -52,5 +66,9 @@ namespace RatRace
 
         }
 
+        public void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

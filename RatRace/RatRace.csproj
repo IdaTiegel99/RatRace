@@ -65,6 +65,9 @@
     <Compile Include="RaceManager.cs" />
     <Compile Include="Rat.cs" />
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="BetScreen.resx">
+      <DependentUpon>BetScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +80,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\Bet.datasource" />
+    <None Include="Properties\DataSources\BetScreen.datasource" />
+    <None Include="Properties\DataSources\Main.datasource" />
+    <None Include="Properties\DataSources\Player.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\RaceManager.datasource" />
+    <None Include="Properties\DataSources\Rat.datasource" />
+    <None Include="Properties\DataSources\RatRace.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\RatRace.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\User.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,6 +102,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

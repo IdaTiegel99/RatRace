@@ -19,5 +19,12 @@ namespace RatRace
 
             Money = 100;
         }
+
+        public Player(int id, double money)
+        {
+            PlayerID = id;
+
+            Money = money;
+        }
     }
 }
