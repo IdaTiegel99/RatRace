@@ -19,10 +19,15 @@ namespace RatRace
             rm  = new RaceManager();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BetScreen Bscr = new BetScreen(rm.Players[0]);
+            Bscr.ShowDialog();
+        }
       
         private void BtnPlayer1_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(rm.Players[0]);
+            BetScreen Bscr = new BetScreen(rm.Players[1]);
             Bscr.ShowDialog();
             
 
@@ -30,25 +35,25 @@ namespace RatRace
 
         private void BtnPlayer2_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(rm.Players[1]);
+            BetScreen Bscr = new BetScreen(rm.Players[2]);
             Bscr.ShowDialog();
         }
 
         private void BtnPlayer3_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(rm.Players[2]);
+            BetScreen Bscr = new BetScreen(rm.Players[3]);
             Bscr.ShowDialog();
         }
 
         private void BtnPlayer4_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(rm.Players[3]);
+            BetScreen Bscr = new BetScreen(rm.Players[4]);
             Bscr.ShowDialog();
         }
 
         private void BtnPlayer5_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(rm.Players[4]);
+            BetScreen Bscr = new BetScreen(rm.Players[5]);
             Bscr.ShowDialog();
         }
 
@@ -56,5 +61,6 @@ namespace RatRace
         {
 
         }
+
     }
 }
