@@ -12,6 +12,7 @@ namespace RatRace
     public class Rat
     {
         public int RatID;
+        public double RatPosition;
 
         public Rat(int id)
         {
