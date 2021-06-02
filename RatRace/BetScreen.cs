@@ -14,26 +14,22 @@ namespace RatRace
     {
         Player plays;
         Player playsId;
-        public BetScreen()
+        RaceManager raceManager;
+
+        public BetScreen(Player play, RaceManager rm)
         {
             InitializeComponent();
-        }
-
-        public BetScreen(Player play)
-        {
-        InitializeComponent();
             plays = play;
-            label2.Text ="" +play.Money;
+            label2.Text = "" + play.Money;
             label2.Update();
-
             playsId = play;
             label1.Text = "Player " + play.PlayerID + " Bets";
- 
+            raceManager = rm;
         }
 
         private void BetRat1_Click(object sender, EventArgs e)
         {
-
+            //raceManager.Rats[0]; // Hier ist deine ratte mein fräulein!
         }
 
         private void BetRat2_Click(object sender, EventArgs e)

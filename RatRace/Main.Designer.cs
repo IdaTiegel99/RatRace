@@ -128,7 +128,6 @@ namespace RatRace
             this.pictureRat1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureRat1.TabIndex = 8;
             this.pictureRat1.TabStop = false;
-            this.pictureRat1.Click += new System.EventHandler(this.pictureRat1_Click);
             // 
             // pictureRat2
             // 
@@ -139,7 +138,6 @@ namespace RatRace
             this.pictureRat2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureRat2.TabIndex = 9;
             this.pictureRat2.TabStop = false;
-            this.pictureRat2.Click += new System.EventHandler(this.pictureRat2_Click);
             // 
             // pictureRat5
             // 
@@ -150,7 +148,6 @@ namespace RatRace
             this.pictureRat5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureRat5.TabIndex = 10;
             this.pictureRat5.TabStop = false;
-            this.pictureRat5.Click += new System.EventHandler(this.pictureRat5_Click);
             // 
             // pictureRat3
             // 
@@ -161,7 +158,6 @@ namespace RatRace
             this.pictureRat3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureRat3.TabIndex = 11;
             this.pictureRat3.TabStop = false;
-            this.pictureRat3.Click += new System.EventHandler(this.pictureRat3_Click);
             // 
             // pictureRat4
             // 
@@ -172,7 +168,6 @@ namespace RatRace
             this.pictureRat4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureRat4.TabIndex = 12;
             this.pictureRat4.TabStop = false;
-            this.pictureRat4.Click += new System.EventHandler(this.pictureRat4_Click);
             // 
             // Main
             // 
