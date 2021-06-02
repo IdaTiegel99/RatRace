@@ -19,7 +19,7 @@ namespace RatRace
             for (int i = 0; i < 5; i++)
             {
                 Players[i] = new Player(i+1/*,Rnd.Next(100,301)*/);
-                Rats[i] = new Rat(i);
+                Rats[i] = new Rat(i+1);
             }
         }
 

@@ -42,11 +42,13 @@ namespace RatRace
             this.pictureRat5 = new System.Windows.Forms.PictureBox();
             this.pictureRat3 = new System.Windows.Forms.PictureBox();
             this.pictureRat4 = new System.Windows.Forms.PictureBox();
+            this.FinishLine = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRat1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRat2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRat5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRat3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRat4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinishLine)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnPlayer2
@@ -142,9 +144,9 @@ namespace RatRace
             // pictureRat5
             // 
             this.pictureRat5.Image = ((System.Drawing.Image)(resources.GetObject("pictureRat5.Image")));
-            this.pictureRat5.Location = new System.Drawing.Point(12, 336);
+            this.pictureRat5.Location = new System.Drawing.Point(10, 336);
             this.pictureRat5.Name = "pictureRat5";
-            this.pictureRat5.Size = new System.Drawing.Size(111, 75);
+            this.pictureRat5.Size = new System.Drawing.Size(113, 75);
             this.pictureRat5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureRat5.TabIndex = 10;
             this.pictureRat5.TabStop = false;
@@ -152,9 +154,9 @@ namespace RatRace
             // pictureRat3
             // 
             this.pictureRat3.Image = ((System.Drawing.Image)(resources.GetObject("pictureRat3.Image")));
-            this.pictureRat3.Location = new System.Drawing.Point(12, 174);
+            this.pictureRat3.Location = new System.Drawing.Point(10, 174);
             this.pictureRat3.Name = "pictureRat3";
-            this.pictureRat3.Size = new System.Drawing.Size(111, 75);
+            this.pictureRat3.Size = new System.Drawing.Size(113, 75);
             this.pictureRat3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureRat3.TabIndex = 11;
             this.pictureRat3.TabStop = false;
@@ -162,18 +164,29 @@ namespace RatRace
             // pictureRat4
             // 
             this.pictureRat4.Image = ((System.Drawing.Image)(resources.GetObject("pictureRat4.Image")));
-            this.pictureRat4.Location = new System.Drawing.Point(12, 255);
+            this.pictureRat4.Location = new System.Drawing.Point(10, 255);
             this.pictureRat4.Name = "pictureRat4";
-            this.pictureRat4.Size = new System.Drawing.Size(111, 75);
+            this.pictureRat4.Size = new System.Drawing.Size(113, 75);
             this.pictureRat4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureRat4.TabIndex = 12;
             this.pictureRat4.TabStop = false;
+            // 
+            // FinishLine
+            // 
+            this.FinishLine.Image = ((System.Drawing.Image)(resources.GetObject("FinishLine.Image")));
+            this.FinishLine.Location = new System.Drawing.Point(801, 1);
+            this.FinishLine.Name = "FinishLine";
+            this.FinishLine.Size = new System.Drawing.Size(21, 446);
+            this.FinishLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.FinishLine.TabIndex = 13;
+            this.FinishLine.TabStop = false;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 641);
+            this.Controls.Add(this.FinishLine);
             this.Controls.Add(this.pictureRat4);
             this.Controls.Add(this.pictureRat3);
             this.Controls.Add(this.pictureRat5);
@@ -193,6 +206,7 @@ namespace RatRace
             ((System.ComponentModel.ISupportInitialize)(this.pictureRat5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRat3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRat4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinishLine)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -210,6 +224,7 @@ namespace RatRace
         private System.Windows.Forms.PictureBox pictureRat5;
         private System.Windows.Forms.PictureBox pictureRat3;
         private System.Windows.Forms.PictureBox pictureRat4;
+        private System.Windows.Forms.PictureBox FinishLine;
     }
 }
 

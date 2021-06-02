@@ -12,19 +12,19 @@ namespace RatRace
 {
     public partial class BetScreen : Form
     {
-        Player plays;
-        Player playsId;
-        RaceManager raceManager;
+        Player _plays;
+        Player _playsId;
+        RaceManager _raceManager;
 
         public BetScreen(Player play, RaceManager rm)
         {
             InitializeComponent();
-            plays = play;
+            _plays = play;
             label2.Text = "" + play.Money;
             label2.Update();
-            playsId = play;
+            _playsId = play;
             label1.Text = "Player " + play.PlayerID + " Bets";
-            raceManager = rm;
+            _raceManager = rm;
         }
 
         private void BetRat1_Click(object sender, EventArgs e)

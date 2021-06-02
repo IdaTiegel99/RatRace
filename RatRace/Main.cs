@@ -12,73 +12,69 @@ namespace RatRace
 {
     public partial class Main : Form
     {
-        RaceManager rm;
-        PictureBox[] images = new PictureBox[5];
-        Random rnd = new Random();
+        public int RatIdInt;
+        RaceManager _rm;
+        PictureBox[] _images = new PictureBox[5];
+        Random _rnd = new Random();
         public Main()
         {
             InitializeComponent();
-            rm = new RaceManager();
-            images[0] = pictureRat1;
-            images[1] = pictureRat2;
-            images[2] = pictureRat3;
-            images[3] = pictureRat4;
-            images[4] = pictureRat5;
+            _rm = new RaceManager();
+            _images[0] = pictureRat1;
+            _images[1] = pictureRat2;
+            _images[2] = pictureRat3;
+            _images[3] = pictureRat4;
+            _images[4] = pictureRat5;
 
+        }
+
+        public Main(Rat rID)
+        {
+            RatIdInt = rID.RatID;
         }
 
         private void BtnPlayer1_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(rm.Players[0], rm);
+            BetScreen Bscr = new BetScreen(_rm.Players[0], _rm);
             Bscr.ShowDialog();
         }
 
         private void BtnPlayer2_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(rm.Players[1], rm);
+            BetScreen Bscr = new BetScreen(_rm.Players[1], _rm);
             Bscr.ShowDialog();
         }
 
         private void BtnPlayer3_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(rm.Players[2], rm);
+            BetScreen Bscr = new BetScreen(_rm.Players[2], _rm);
             Bscr.ShowDialog();
         }
 
         private void BtnPlayer4_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(rm.Players[3], rm);
+            BetScreen Bscr = new BetScreen(_rm.Players[3], _rm);
             Bscr.ShowDialog();
         }
 
         private void BtnPlayer5_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(rm.Players[4], rm);
+            BetScreen Bscr = new BetScreen(_rm.Players[4], _rm);
             Bscr.ShowDialog();
         }
 
         private void BtnMove_Click(object sender, EventArgs e)
         {
-            images[0].Location = new Point(images[0].Location.X + rnd.Next(1, 21) + rnd.Next(1, 21), images[0].Location.Y);
-            //images[1].Location = new Point(images[1].Location.X + rnd.Next(1, 21) + rnd.Next(1, 21), images[1].Location.Y);
-            //images[2].Location = new Point(images[2].Location.X + rnd.Next(1, 21) + rnd.Next(1, 21), images[2].Location.Y);
-            //images[3].Location = new Point(images[3].Location.X + rnd.Next(1, 21) + rnd.Next(1, 21), images[3].Location.Y);
-            //images[4].Location = new Point(images[4].Location.X + rnd.Next(1, 21) + rnd.Next(1, 21), images[4].Location.Y);
-
-        }
-
-        public void FinishLine()
-        {
-            InitializeComponent();
-            string msg = "Hej du vandt!";
-
-             if (images[0].Location.X == 710 )
+            for (int i = 0; i < 5; i++)
             {
-                MessageBox.Show(msg);
+                _images[i].Location = new Point(_images[i].Location.X + _rnd.Next(1, 21) + _rnd.Next(1, 21), _images[i].Location.Y);
+                if (_images[i].Location.X > 710)
+                {
+                    string msg = "Hej " + (i + 1) + " Du Vandt";
+                    MessageBox.Show(msg);
+                    return;
+                }
             }
         }
-
-
-
     }
 }
