@@ -68,13 +68,15 @@ namespace RatRace
             for (int i = 0; i < 5; i++)
             {
                 _images[i].Location = new Point(_images[i].Location.X + _rnd.Next(1, 21) + _rnd.Next(1, 21), _images[i].Location.Y);
-                if (_images[i].Location.X > 710)
+                if (_images[i].Location.X > 200)
                 {
-                    string msg = "Hej " + (i + 1) + " Du Vandt";
-                    MessageBox.Show(msg);
+                    //string msg = "Hej " + (i + 1) + " Du Vandt";
+                    NewGame ng = new NewGame();
+                    ng.ShowDialog();
                     return;
                 }
             }
         }
     }
 }
+

@@ -29,35 +29,38 @@ namespace RatRace
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.NewGameBtn = new System.Windows.Forms.Button();
+            this.rottelbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // NewGameBtn
             // 
-            this.button1.Location = new System.Drawing.Point(215, 201);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.NewGameBtn.AutoSize = true;
+            this.NewGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewGameBtn.Location = new System.Drawing.Point(181, 189);
+            this.NewGameBtn.Name = "NewGameBtn";
+            this.NewGameBtn.Size = new System.Drawing.Size(140, 36);
+            this.NewGameBtn.TabIndex = 0;
+            this.NewGameBtn.Text = "New Game";
+            this.NewGameBtn.UseVisualStyleBackColor = true;
+            this.NewGameBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // rottelbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(238, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.rottelbl.AutoSize = true;
+            this.rottelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rottelbl.Location = new System.Drawing.Point(209, 24);
+            this.rottelbl.Name = "rottelbl";
+            this.rottelbl.Size = new System.Drawing.Size(76, 26);
+            this.rottelbl.TabIndex = 1;
+            this.rottelbl.Text = "label1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(133, 76);
+            this.label2.Location = new System.Drawing.Point(81, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 2;
@@ -66,7 +69,7 @@ namespace RatRace
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(323, 75);
+            this.label3.Location = new System.Drawing.Point(378, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 3;
@@ -79,8 +82,8 @@ namespace RatRace
             this.ClientSize = new System.Drawing.Size(502, 252);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.rottelbl);
+            this.Controls.Add(this.NewGameBtn);
             this.Name = "NewGame";
             this.Text = "NewGame";
             this.ResumeLayout(false);
@@ -90,9 +93,9 @@ namespace RatRace
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button NewGameBtn;
+        public System.Windows.Forms.Label rottelbl;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
     }
 }
