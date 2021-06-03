@@ -15,24 +15,37 @@ namespace RatRace
         Rat _ratWin;
         RaceManager _raceManager;
 
-        public NewGame()
-        {
-            InitializeComponent();
-        }
+        
+       
 
         public NewGame(Rat rats, RaceManager rm)
         {
             InitializeComponent();
             _ratWin = rats;
-            label3.Text ="" + rats.RatID;
-            label3.Update();
+            rottelbl.Text ="Rat " + rats.RatID + " Wins!";
+            rottelbl.Update();
             _raceManager = rm;
+            label2.Text = "Player ";
+            foreach (Bet item in _raceManager.Bets)
+            {
+                if (item.RatID == rats)
+                {
+                  label2.Text += item.PlayerID.PlayerID + " Wins!";
+                }
+            }
+
+
         }
 
 
         public void button1_Click(object sender, EventArgs e)
         {
             Application.Restart();
+        }
+
+        private void rottelbl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

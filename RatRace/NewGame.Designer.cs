@@ -56,6 +56,7 @@ namespace RatRace
             this.rottelbl.Size = new System.Drawing.Size(76, 26);
             this.rottelbl.TabIndex = 1;
             this.rottelbl.Text = "label1";
+            this.rottelbl.Click += new System.EventHandler(this.rottelbl_Click);
             // 
             // label2
             // 

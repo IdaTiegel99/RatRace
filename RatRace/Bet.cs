@@ -13,11 +13,13 @@ namespace RatRace
         public Player PlayerID;
         public Rat RatID;
         public double BetAmount;
-        public double BetID;
 
-        public Bet()
+        
+        public Bet(Player playerID, Rat ratID, double betAmount)
         {
-           
+            PlayerID = playerID;
+            RatID = ratID;
+            BetAmount = betAmount;
         }
     }
         

@@ -11,7 +11,7 @@ namespace RatRace
         
         public Player[] Players = new Player[5];
         public Rat[] Rats = new Rat[5];
-        public Bet[] Bets = new Bet[5];
+        public List<Bet> Bets = new List<Bet>();
         // public Random Rnd = new Random();
 
         public RaceManager()
@@ -25,10 +25,8 @@ namespace RatRace
 
         public void MakeBet(Player play, Rat rat, double amount)
         {
-            Bet B = new Bet();
-            B.PlayerID = play;
-            B.RatID = rat;
-            B.BetAmount = amount;
+            Bet B = new Bet(play,rat,amount);
+            Bets.Add(B);
         }
 
     }

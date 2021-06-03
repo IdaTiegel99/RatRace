@@ -160,6 +160,7 @@ namespace RatRace
             this.pictureRat3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureRat3.TabIndex = 11;
             this.pictureRat3.TabStop = false;
+            this.pictureRat3.Click += new System.EventHandler(this.pictureRat3_Click);
             // 
             // pictureRat4
             // 

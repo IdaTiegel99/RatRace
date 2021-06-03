@@ -17,7 +17,7 @@ namespace RatRace
         {
             PlayerID = id;
 
-            Money = 100;
+            Money = 500;
         }
 
         public Player(int id, double money)

@@ -12,6 +12,8 @@ namespace RatRace
 {
     public partial class Main : Form
     {
+        string _op1 = "Only Player 1 can place bets. This button is just for show...";
+        string _op1t = "It's not a bug, but a feature.";
         public int RatIdInt;
         RaceManager _rm;
         PictureBox[] _images = new PictureBox[5];
@@ -41,26 +43,23 @@ namespace RatRace
 
         private void BtnPlayer2_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(_rm.Players[1], _rm);
-            Bscr.ShowDialog();
+            
+            MessageBox.Show(_op1, _op1t);
         }
 
         private void BtnPlayer3_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(_rm.Players[2], _rm);
-            Bscr.ShowDialog();
+            MessageBox.Show(_op1, _op1t);
         }
 
         private void BtnPlayer4_Click(object sender, EventArgs e)
-        {
-            BetScreen Bscr = new BetScreen(_rm.Players[3], _rm);
-            Bscr.ShowDialog();
+        { 
+            MessageBox.Show(_op1, _op1t); 
         }
 
         private void BtnPlayer5_Click(object sender, EventArgs e)
         {
-            BetScreen Bscr = new BetScreen(_rm.Players[4], _rm);
-            Bscr.ShowDialog();
+            MessageBox.Show(_op1, _op1t);
         }
 
         private void BtnMove_Click(object sender, EventArgs e)
@@ -68,14 +67,19 @@ namespace RatRace
             for (int i = 0; i < 5; i++)
             {
                 _images[i].Location = new Point(_images[i].Location.X + _rnd.Next(1, 21) + _rnd.Next(1, 21), _images[i].Location.Y);
-                if (_images[i].Location.X > 200)
+                if (_images[i].Location.X > 700)
                 {
-                    //string msg = "Hej " + (i + 1) + " Du Vandt";
-                    NewGame ng = new NewGame();
+                    
+                    NewGame ng = new NewGame(_rm.Rats[i],_rm);
                     ng.ShowDialog();
                     return;
                 }
             }
+        }
+
+        private void pictureRat3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

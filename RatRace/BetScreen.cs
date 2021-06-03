@@ -12,14 +12,12 @@ namespace RatRace
 {
     public partial class BetScreen : Form
     {
-        Player _plays;
         Player _playsId;
         RaceManager _raceManager;
 
         public BetScreen(Player play, RaceManager rm)
         {
             InitializeComponent();
-            _plays = play;
             label2.Text = "" + play.Money;
             label2.Update();
             _playsId = play;
@@ -29,26 +27,30 @@ namespace RatRace
 
         private void BetRat1_Click(object sender, EventArgs e)
         {
-            //raceManager.Rats[0]; // Hier ist deine ratte mein fräulein!
+            _raceManager.MakeBet(_playsId, _raceManager.Rats[0],(double)AmountPicker.Value); 
         }
 
         private void BetRat2_Click(object sender, EventArgs e)
         {
+            _raceManager.MakeBet(_playsId, _raceManager.Rats[1], (double)AmountPicker.Value);
 
         }
 
         private void BetRat3_Click(object sender, EventArgs e)
         {
+            _raceManager.MakeBet(_playsId, _raceManager.Rats[2], (double)AmountPicker.Value);
 
         }
 
         private void BetRat4_Click(object sender, EventArgs e)
         {
+            _raceManager.MakeBet(_playsId, _raceManager.Rats[3], (double)AmountPicker.Value);
 
         }
 
         private void BetRat5_Click(object sender, EventArgs e)
         {
+            _raceManager.MakeBet(_playsId, _raceManager.Rats[4], (double)AmountPicker.Value);
 
         }
 
