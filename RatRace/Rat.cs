@@ -12,13 +12,13 @@ namespace RatRace
         public PictureBox MyPictureBox;
         public int RatID;
         public int RatPosition;
-        public decimal Odds;
+        public double Odds;
         
-        public Rat(int id, decimal odds)
+        public Rat(int id, double odds)
         {
             RatID = id;
 
-            Odds = odds;
+            Odds = 1+ odds/10;
         }
     }
 

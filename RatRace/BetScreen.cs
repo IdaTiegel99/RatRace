@@ -15,6 +15,7 @@ namespace RatRace
         Player _playsId;
         RaceManager _raceManager;
 
+
         public BetScreen(Player play, RaceManager rm)
         {
             InitializeComponent();
@@ -23,17 +24,15 @@ namespace RatRace
             _playsId = play;
             label1.Text = "Player " + play.PlayerID + " Bets";
             _raceManager = rm;
-            Button[] showodds = new Button[5];
-            showodds[0] = BetRat1;
-            BetRat1.Text = "";
-            showodds[1] = BetRat2;
-            showodds[2] = BetRat3;
-            showodds[3] = BetRat4;
-            showodds[4] = BetRat5;
 
-
-
+            BetRat1.Text = "Bet on Rat 1. \n" + "Odds: " + _raceManager.Rats[0].Odds;
+            BetRat2.Text = "Bet on Rat 2. \n" + "Odds: " + _raceManager.Rats[1].Odds;
+            BetRat3.Text = "Bet on Rat 3. \n" + "Odds: " + _raceManager.Rats[2].Odds;
+            BetRat4.Text = "Bet on Rat 4. \n" + "Odds: " + _raceManager.Rats[3].Odds;
+            BetRat5.Text = "Bet on Rat 5. \n" + "Odds: " + _raceManager.Rats[4].Odds;
         }
+
+      
 
         private void BetRat1_Click(object sender, EventArgs e)
         {

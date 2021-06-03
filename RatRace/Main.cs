@@ -14,13 +14,12 @@ namespace RatRace
     {
         string _op1 = "Only Player 1 can place bets. This button is just for show...";
         string _op1t = "It's not a bug, but a feature.";
-        public int RatIdInt;
         RaceManager _rm;
         PictureBox[] _images = new PictureBox[5];
         Random _rnd = new Random();
         public Main()
         {
-            InitializeComponent();
+              InitializeComponent();
             _rm = new RaceManager();
             _images[0] = pictureRat1;
             _images[1] = pictureRat2;
@@ -30,10 +29,7 @@ namespace RatRace
 
         }
 
-        public Main(Rat rID)
-        {
-            RatIdInt = rID.RatID;
-        }
+      
 
         private void BtnPlayer1_Click(object sender, EventArgs e)
         {

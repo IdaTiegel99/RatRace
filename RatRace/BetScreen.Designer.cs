@@ -125,6 +125,11 @@ namespace RatRace
             // AmountPicker
             // 
             this.AmountPicker.Location = new System.Drawing.Point(339, 75);
+            this.AmountPicker.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.AmountPicker.Name = "AmountPicker";
             this.AmountPicker.Size = new System.Drawing.Size(120, 20);
             this.AmountPicker.TabIndex = 9;
