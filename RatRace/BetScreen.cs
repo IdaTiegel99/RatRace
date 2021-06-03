@@ -23,6 +23,16 @@ namespace RatRace
             _playsId = play;
             label1.Text = "Player " + play.PlayerID + " Bets";
             _raceManager = rm;
+            Button[] showodds = new Button[5];
+            showodds[0] = BetRat1;
+            BetRat1.Text = "";
+            showodds[1] = BetRat2;
+            showodds[2] = BetRat3;
+            showodds[3] = BetRat4;
+            showodds[4] = BetRat5;
+
+
+
         }
 
         private void BetRat1_Click(object sender, EventArgs e)
