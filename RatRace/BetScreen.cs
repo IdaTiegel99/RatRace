@@ -15,11 +15,10 @@ namespace RatRace
         Player _playsId;
         RaceManager _raceManager;
 
-
         public BetScreen(Player play, RaceManager rm)
         {
             InitializeComponent();
-            double MoneyDraw = play.Money -  0;
+            double MoneyDraw = play.Money - 0;
             label2.Text = "" + MoneyDraw;
             label2.Update();
             _playsId = play;
@@ -33,11 +32,17 @@ namespace RatRace
             BetRat5.Text = "Bet on Rat 5. \n" + "Odds: " + _raceManager.Rats[4].Odds;
         }
 
-      
-
         private void BetRat1_Click(object sender, EventArgs e)
         {
-            _raceManager.MakeBet(_playsId, _raceManager.Rats[0],(double)AmountPicker.Value); 
+            if (_raceManager.MakeBet(_playsId, _raceManager.Rats[0], (double)AmountPicker.Value))
+            {
+                label2.Text = "" + _playsId.Money;
+                label2.Update();
+            }
+            else
+            {
+                MessageBox.Show("No money for you");
+            }
         }
 
         private void BetRat2_Click(object sender, EventArgs e)

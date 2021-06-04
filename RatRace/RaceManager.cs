@@ -24,10 +24,21 @@ namespace RatRace
             }
         }
 
-        public void MakeBet(Player play, Rat rat, double amount)
+        public bool MakeBet(Player play, Rat rat, double amount)
         {
+            if (play.Money >= amount)
+            {
             Bet B = new Bet(play,rat,amount);
+            play.Money -= amount;
             Bets.Add(B);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+         
+
         }
 
     }
