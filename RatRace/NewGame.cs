@@ -25,7 +25,7 @@ namespace RatRace
             rottelbl.Text ="Rat " + rats.RatID + " Wins!";
             rottelbl.Update();
 
-            double tingelingelater = 0;
+            double Winnings = 0;
             _raceManager = rm;
             label2.Text = "Player ";
             foreach (Bet item in _raceManager.Bets)
@@ -33,11 +33,11 @@ namespace RatRace
                 if (item.RatID == rats)
                 {
                   label2.Text += item.PlayerID.PlayerID + " Wins!";
-                    tingelingelater = item.RatID.Odds * item.BetAmount;
+                    Winnings = item.RatID.Odds * item.BetAmount;
                 }
                 break;
             }
-            label3.Text = "Gevinst " +tingelingelater;
+            label3.Text = "Gevinst " +Winnings;
 
         }
 

@@ -166,6 +166,6 @@ namespace RatRace
         private System.Windows.Forms.Button BetDone;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown AmountPicker;
+        public System.Windows.Forms.NumericUpDown AmountPicker;
     }
 }
