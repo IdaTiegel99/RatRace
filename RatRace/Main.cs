@@ -12,8 +12,6 @@ namespace RatRace
 {
     public partial class Main : Form
     {
-        string _op1 = "Only Player 1 can place bets. This button is just for show...";
-        string _op1t = "It's not a bug, but a feature.";
         RaceManager _rm;
         PictureBox[] _images = new PictureBox[5];
         Random _rnd = new Random();
@@ -39,23 +37,27 @@ namespace RatRace
 
         private void BtnPlayer2_Click(object sender, EventArgs e)
         {
-            
-            MessageBox.Show(_op1, _op1t);
+
+            BetScreen Bscr = new BetScreen(_rm.Players[1], _rm);
+            Bscr.ShowDialog();
         }
 
         private void BtnPlayer3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(_op1, _op1t);
+            BetScreen Bscr = new BetScreen(_rm.Players[2], _rm);
+            Bscr.ShowDialog();
         }
 
         private void BtnPlayer4_Click(object sender, EventArgs e)
-        { 
-            MessageBox.Show(_op1, _op1t); 
+        {
+            BetScreen Bscr = new BetScreen(_rm.Players[3], _rm);
+            Bscr.ShowDialog();
         }
 
         private void BtnPlayer5_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(_op1, _op1t);
+            BetScreen Bscr = new BetScreen(_rm.Players[4], _rm);
+            Bscr.ShowDialog();
         }
 
         private void BtnMove_Click(object sender, EventArgs e)

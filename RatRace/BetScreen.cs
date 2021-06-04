@@ -19,8 +19,8 @@ namespace RatRace
         public BetScreen(Player play, RaceManager rm)
         {
             InitializeComponent();
-            double JegVilHjem = play.Money - 3;
-            label2.Text = "" + JegVilHjem;
+            double MoneyDraw = play.Money -  0;
+            label2.Text = "" + MoneyDraw;
             label2.Update();
             _playsId = play;
             label1.Text = "Player " + play.PlayerID + " Bets";

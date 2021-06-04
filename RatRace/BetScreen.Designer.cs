@@ -43,7 +43,7 @@ namespace RatRace
             // 
             // BetRat1
             // 
-            this.BetRat1.Location = new System.Drawing.Point(12, 178);
+            this.BetRat1.Location = new System.Drawing.Point(12, 218);
             this.BetRat1.Name = "BetRat1";
             this.BetRat1.Size = new System.Drawing.Size(136, 46);
             this.BetRat1.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace RatRace
             // 
             // BetRat2
             // 
-            this.BetRat2.Location = new System.Drawing.Point(339, 178);
+            this.BetRat2.Location = new System.Drawing.Point(170, 218);
             this.BetRat2.Name = "BetRat2";
             this.BetRat2.Size = new System.Drawing.Size(136, 46);
             this.BetRat2.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace RatRace
             // 
             // BetRat3
             // 
-            this.BetRat3.Location = new System.Drawing.Point(652, 178);
+            this.BetRat3.Location = new System.Drawing.Point(323, 218);
             this.BetRat3.Name = "BetRat3";
             this.BetRat3.Size = new System.Drawing.Size(136, 46);
             this.BetRat3.TabIndex = 2;
@@ -73,7 +73,7 @@ namespace RatRace
             // 
             // BetRat4
             // 
-            this.BetRat4.Location = new System.Drawing.Point(171, 251);
+            this.BetRat4.Location = new System.Drawing.Point(486, 218);
             this.BetRat4.Name = "BetRat4";
             this.BetRat4.Size = new System.Drawing.Size(136, 46);
             this.BetRat4.TabIndex = 3;
@@ -83,7 +83,7 @@ namespace RatRace
             // 
             // BetRat5
             // 
-            this.BetRat5.Location = new System.Drawing.Point(496, 251);
+            this.BetRat5.Location = new System.Drawing.Point(639, 218);
             this.BetRat5.Name = "BetRat5";
             this.BetRat5.Size = new System.Drawing.Size(136, 46);
             this.BetRat5.TabIndex = 4;
@@ -95,7 +95,7 @@ namespace RatRace
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(358, 21);
+            this.label1.Location = new System.Drawing.Point(333, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 36);
             this.label1.TabIndex = 5;
@@ -114,7 +114,7 @@ namespace RatRace
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(78, 25);
+            this.label2.Location = new System.Drawing.Point(78, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 32);
             this.label2.TabIndex = 8;

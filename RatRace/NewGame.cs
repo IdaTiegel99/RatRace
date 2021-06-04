@@ -32,6 +32,7 @@ namespace RatRace
             {
                 if (item.RatID == rats)
                 {
+                 
                   label2.Text += item.PlayerID.PlayerID + " Wins!";
                     Winnings = item.RatID.Odds * item.BetAmount;
                 }
